@@ -1,4 +1,3 @@
-/* Core Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -20,7 +19,6 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* Flexbox Layout for Profile */
 .profile {
     display: flex;
     align-items: center;
@@ -37,10 +35,9 @@ header h1 {
     border: 5px solid white;
 }
 
-/* Grid Layout for Skills */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     max-width: 900px;
@@ -56,9 +53,8 @@ header h1 {
     font-weight: bold;
 }
 
-/* Form Styling */
 form {
-    display: block; /* Requirement: display block */
+    display: block; 
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
@@ -67,14 +63,13 @@ form {
 }
 
 input, textarea {
-    display: inline-block; /* Requirement: inline-block */
+    display: inline-block;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -82,16 +77,13 @@ footer {
     color: white;
 }
 
-/* --- RESPONSIVE DESIGN --- */
 
 @media (max-width: 768px) {
-    /* Stack Flexbox Vertically */
     .profile {
         flex-direction: column;
         text-align: center;
     }
-
-    /* Reduce Grid to 1 Column */
+    
     .skills-grid {
         grid-template-columns: 1fr;
     }
