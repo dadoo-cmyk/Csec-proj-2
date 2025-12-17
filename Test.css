@@ -1,0 +1,98 @@
+/* Core Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Flexbox Layout for Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Grid Layout for Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    display: block; /* Requirement: display block */
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+input, textarea {
+    display: inline-block; /* Requirement: inline-block */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 768px) {
+    /* Stack Flexbox Vertically */
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reduce Grid to 1 Column */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
